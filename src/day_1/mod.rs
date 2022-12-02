@@ -7,7 +7,7 @@ pub fn main() {
 
     let mut elves_cargo = vec![];
 
-    for (elf_num, cargo) in contents.rsplit("\n\n").enumerate() {
+    for cargo in contents.rsplit("\n\n") {
         let cargo_list: Vec<i64> = cargo.lines().map(|x| x.parse::<i64>().unwrap()).collect();
         let total = cargo_list.iter().sum::<i64>();
         elves_cargo.push(total);
