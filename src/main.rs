@@ -5,6 +5,7 @@ mod day_2;
 mod day_3;
 mod day_4;
 mod day_6;
+mod day_12;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -24,6 +25,7 @@ fn main() {
         3 => day_3::main(),
         4 => day_4::main(),
         6 => day_6::main(),
+        12 => day_12::main(),
         _ => println!("Day not reconized")
     }
 }
